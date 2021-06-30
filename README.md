@@ -84,15 +84,12 @@ Required hardware:
 This procedure is needed when you bought new Raspberry/need to flash old raspberry to install
 new Ubuntu.
 Required Things:
-<img align="right" src="pictures/piimager.png" width= 500/>
+<img align="right" src="pictures/piimager.png" width= 400/>
 1. Brand new Raspberry / Raspberry that need to be flashed new
 2. Download thePi Imagerfile and install it from [Here](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi##1-overview)
 3. If your in Linux InstallPi Imagerby following the command
     sudo snap i n s t a l l r p i−i m a g e r
 
-```
-Figure 1.2: Raspberry pi Imager
-```
 4. choose the OS asRaspberry pi OS 32 bitprobably it will be in first option
 5. insert the sd card and click write
 6. After its been installed you can insert this sd card into raspberry and you have freshly
