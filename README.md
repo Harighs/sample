@@ -85,7 +85,7 @@ This procedure is needed when you bought new Raspberry/need to flash old raspber
 new Ubuntu.
 Required Things:
 
-<img align="centre" src="pictures/piimager.png" width= 500/>
+<img align="right" src="pictures/piimager.png" width= 400/>
 
 1. Brand new Raspberry / Raspberry that need to be flashed new
 2. Download thePi Imagerfile and install it from [Here](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi##1-overview)
@@ -106,7 +106,7 @@ on the SD-card. For this step the Card-Reader is needed. For this project the Ra
 
 
 OS Lite (32-bit) is used, which is a port of Debian with no desktop environment. There is an
-Imager program available to fasten the installation [step here](https://www.raspberrypi.org/software/). The instructions of the program
+Imager program available to fasten the [installation step here](https://www.raspberrypi.org/software/). The instructions of the program
 need to be followed and afterward the SD-Card is ready to use.
 The next step is to connect the Raspberry Pi (Power adapter, LAN-cable, Keyboard and
 HDMI cable) and to insert the SD-Card. The initial startup is done and thedefault login
@@ -158,7 +158,7 @@ Raspberry Pi, the Port 22 and the connection type SSH marked. These settings can
 and used for later access. If the Raspberry Pi was connected over another LAN-connection,
 the IP address needs to be updated.
 
-(^5) https://www.raspberrypi.org/software/
+<img align="center" src="pictures/puttyScreenshot_marked.png" width= 400/>
 
 
 Figure 1.3: Applicationputtywith example settings for the SSH connection to the Raspberry
@@ -196,10 +196,9 @@ insert fresh air into the room. At the moment only one LED is connected to the b
 is used as an indicator, that a set of telemetry is sent to the hub. The LED used was already
 part of the CDL equipment and i was not sure if it was part of the Arduino Sensor Pack, which
 
+<img align="center" src="pictures/fotoHWAll.jpg" width= 400/>
 
-```
-Figure 1.4: Picture of the current Hardware Setup of the AirQuality Raspberry Pi.
-```
+
 ```
 component pin GPIO
 LED Pin 11 GPIO 17
@@ -232,13 +231,13 @@ to the transistor. Depending on the transistor and LED in use, the resistors nee
 accordingly.
 More information on how to access the LED in Python can be found in subsection 1.6.1.
 
+<img align="center" src="pictures/circuitAll_marked.png" width= 400/>
 
 Figure 1.5: Circuit diagram of current AirQuality Raspberry Pi Setup. The supply and ground
 connection are marked: blue - ground, yellow - 3.3 V supply, red - 5 V supply.
 
-```
-Figure 1.6: Circuit diagram for LED connection to the Raspberry Pi.
-```
+<img align="center" src="pictures/circuitLED.png" width= 400/>
+
 
 #### 1.4.2 Buzzer
 
@@ -501,9 +500,9 @@ This is one of the services which Azure enables highly secure and reliable commu
 between your Internet of Things (IoT) application and the devices it manages. Azure IoT Hub
 provides a cloud-hosted solution back end to connect virtually any device.
 
-```
-Figure 2.1: Azure Iot Hub
-```
+<img align="center" src="pictures/iothubhomepage.png" width= 400/>
+
+
 IoT Hub is the entry point to the data which we actually want to work on after receiving here
 we have huge options to work on with. We can use the IoT app as a source for other azure
 services. In this section an Azure IoT hub will be created. A related documentation is part of
@@ -518,9 +517,10 @@ the [linked Quickstart](https://docs.microsoft.com/en-us/azure/iot-hub/quickstar
 - Resource Locationd
 - IOT hub Name
 
-```
-Figure 2.2: Screenshot while creation of iot hub app
-```
+<img align="center" src="pictures/iothub.png" width= 400/>
+
+
+
 #### 2.3.2 Usage and further info
 
 - Manage IoT Devices (make successful connections for data transfer)
@@ -529,12 +529,11 @@ Figure 2.2: Screenshot while creation of iot hub app
 - Using ‘Message Routhing’ option telemetry messages can be sent to : Events, Storage,
     Event Hubs and much more.
 
-```
-Figure 2.3: Screenshot of routing page in azure iot hub app
-```
-```
+<img align="center" src="pictures/iotrouting.png" width= 400/>
+
+
 For further info:
-```
+
 
 - About[ IOT Hub](https://channel9.msdn.com/Shows/Azure-Friday/Azure-IoT-Hub?term=iot)
 - For [Device Streaming](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Hub-Device-Streams?term=iot)
@@ -552,9 +551,9 @@ breakthrough customer experiences. Examples include buildings, factories.
 - Connect assets such as IoT devices as well as existing business systems to Azure Digital
     Twins.
 
-```
-Figure 2.4: Azure Digital Twin
-```
+<img align="center" src="pictures/digitaltwinhomepage.png" width= 400/>
+
+
 In this section a Digital Twins platform will be created. A related documentation is part of
 the [linked Quickstart](https://docs.microsoft.com/en-us/azure/digital-twins/quickstart-adt-explorer).
 
@@ -565,9 +564,8 @@ the [linked Quickstart](https://docs.microsoft.com/en-us/azure/digital-twins/qui
     - a location and
     - a name for the Digital Twins service.
 
-```
-Figure 2.5: Screenshot of Digital Twin app after created successfully
-```
+<img align="center" src="pictures/digitaltwincreation.png" width= 400/>
+
 In above figure you can find the”Host Name”where you can find in DT homepage is the
 string should be noted. It is used further for installing DT Explorer.
 The resource group will be later used for all other resources related to the AirQuality project.
@@ -604,10 +602,9 @@ less then version 10), npm. The process to install DT Explorer:
     npm i n s t a l l
 5. Run the command: to start the DT Explorer
     npm run s t a r t
+<img align="center" src="pictures/dtexplorer.png" width= 400/>
 
-```
-Figure 2.6: Screenshot of Digital Twin explorer after created successfully
-```
+
 #### 2.4.2 To connect DT explorer to your Azure DT:
 
 1. Copy host name from your Digital twin home page, and add‘https://’ in front for
@@ -619,25 +616,20 @@ Figure 2.6: Screenshot of Digital Twin explorer after created successfully
 #### 2.4.3 Creating and uploading the model
 
 1. All dt models should be written in .json file
-2. Open your favourite code editor and create new .json file
 
-```
-Figure 2.7: Sample code of a model in json format by dtdl language
-```
+2. Open your favourite code editor and create new .json file
+<img align="center" src="pictures/dtexplorer.png" width= 400/>
 
 3. This code above is the example simple model which contains ‘temperature’ and ‘Humid-
     ity’: It is based on azure dtdl language. [More about it](https://docs.microsoft.com/en-us/azure/digital-twins/concepts-models)
-4. For uploading click the upload button on DT explorer and select the .json file you created
-    before. Then your model will be shown below.
+4. For uploading click the upload button on DT explorer and select the .json file you created before. Then your model will be shown below.
 
-```
-Figure 2.8: option tools pane on left side of DT Explorer
-```
+<img align="center" src="pictures/uploadmodel.png" width= 200/>
+
 5. Then finally the model is created and will be visualised if added to explorer.
+<img align="center" src="pictures/dtmodel.png" width= 400/>
 
-```
-Figure 2.9: Screenshot of Digital Twin explorer after created successfully
-```
+
 ### 2.5 Local development with Azure
 
 There are three ways to improve working with Azure on a local maschine.
